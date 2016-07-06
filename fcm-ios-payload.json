@@ -1,0 +1,100 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "to": {
+      "type": "string"
+    },
+    "registration_ids": {
+      "type": "string"
+    },
+    "condition": {
+      "type": "string"
+    },
+    "collapse_key": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "string"
+    },
+    "content_available": {
+      "type": "boolean"
+    },
+    "delay_while_idle": {
+      "type": "boolean"
+    },
+    "time_to_live": {
+      "type": "integer"
+    },
+    "restricted_package_name": {
+      "type": "string"
+    },
+    "dry_run": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {}
+    },
+    "notification": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "sound": {
+          "type": "string"
+        },
+        "badge": {
+          "type": "string"
+        },
+        "click_action": {
+          "type": "string"
+        },
+        "body_loc_key": {
+          "type": "string"
+        },
+        "body_loc_args": {
+          "type": "string"
+        },
+        "title_loc_key": {
+          "type": "string"
+        },
+        "title_loc_args": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "title",
+        "body",
+        "sound",
+        "badge",
+        "click_action",
+        "body_loc_key",
+        "body_loc_args",
+        "title_loc_key",
+        "title_loc_args"
+      ]
+    }
+  },
+  "required": [
+    "to",
+    "registration_ids",
+    "condition",
+    "collapse_key",
+    "priority",
+    "content_available",
+    "delay_while_idle",
+    "time_to_live",
+    "restricted_package_name",
+    "dry_run",
+    "data",
+    "notification"
+  ]
+}
