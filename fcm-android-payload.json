@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "Firebase iOS JSON payload schema",
-  "description": "An explanation about the purpose of this instance.",
+  "description": "As per https://firebase.google.com/docs/cloud-messaging/http-server-ref",
   "properties": {
     "to": {
       "type": "string",
@@ -41,8 +41,7 @@
       "type": "boolean",
       "title": "Delay_while_idle schema.",
       "default": false,
-      "description": "When this parameter is set to true, it indicates that the message should not be sent until the device becomes active.
-      The default value is false."
+      "description": "When this parameter is set to true, it indicates that the message should not be sent until the device becomes active. The default value is false."
     },
     "time_to_live": {
       "type": "integer",
@@ -58,8 +57,7 @@
       "type": "boolean",
       "title": "Dry_run schema.",
       "default": false,
-      "description": "This parameter, when set to true, allows developers to test a request without actually sending a message.
-      The default value is false."
+      "description": "This parameter, when set to true, allows developers to test a request without actually sending a message. The default value is false."
     },
     "data": {
       "type": "object",

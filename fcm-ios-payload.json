@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "object",
   "title": "Firebase iOS JSON payload schema",
-  "description": "An explanation about the purpose of this instance.",
+  "description": "As per https://firebase.google.com/docs/cloud-messaging/http-server-ref",
   "properties": {
     "to": {
       "type": "string",
